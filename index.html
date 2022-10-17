@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercular Clone</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./countdown.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- หมวดหมู่ -->
+    <div class="main-box pl-3 pr-3 pt-3 no-scroll-x">
+      <div class="d-flex flex-row items-box">
+        <div class="backward">
+          <button class="btn-forward text-15 outline-none" id="btn-backward">
+            <
+          </button>
+        </div>
+        <div class="forward">
+          <button class="btn-forward text-15 outline-none" id="btn-forward">
+            >
+          </button>
+        </div>
+        <a href="#">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Audio-1.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate pl-0-62">ดูหนัง ฟังเพลง</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Gaming.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">เล่นเกม</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/DeskStation.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">จัดโต๊ะคอม</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Computer.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">คอมพิวเตอร์และโน๊ตบุ๊ค</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Fitness.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">ออกกำลังกายและสุขภาพ</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Smart-Home.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">สมาร์ทโฮม</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Outdoor.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">กิจกรรมกลางแจ้ง</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/TV.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">TV</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Steaming.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate px-3 pl-0-62">Live Streaming</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/IT.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">อุปกรณ์ไอที</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Accessory.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">อุปกรณ์เสริมมือถือ</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Collectibles.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">ของสะสม</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Music.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">งานดนตรี / งานเพลง</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Camera.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate">ถ่ายภาพ</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="ml-4">
+          <div class="item-box position-relative d-flex align-items-center p-0">
+            <div class="item text-center">
+              <div
+                class="icon-box m-auto d-flex align-items-center justify-content-center"
+              >
+                <img src="./img/Smart-Gadget.png" class="icon" alt="" />
+              </div>
+              <p class="texticon text-truncate px-0-0-7">Smart-Gadget</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FlashSale -->
+    <div class="my-3 flashSale-main-box">
+      <div class="bg-flashSale">
+        <!-- FlashSale-logo -->
+        <div class="flashSale-box">
+          <div class="d-flex flex-column ml-3 mt-1">
+            <img
+              loading="lazy"
+              src="./img/flashsale-logo.png"
+              width="83"
+              height="26"
+              class=""
+              alt=""
+            />
+          </div>
+          <div class="d-flex flex-row">
+            <!-- textclock -->
+            <div class="d-flex pt-10 flex-column align-items-center text-right">
+              <p class="special">ราคาพิเศษ</p>
+              <p class="timeup">เหลือเวลาเพียง</p>
+            </div>
+            <!-- clock -->
+
+            <div class="countdown">
+              <!-- Day -->
+              <div
+                class="countdown-block"
+                style="display: none; opacity: 0; user-select: none"
+              >
+                <span class="days time-elem">
+                  <span class="top">00</span>
+                  <span class="top-back">
+                    <span>00</span>
+                  </span>
+                  <span class="bottom">00</span>
+                  <span class="bottom-back">
+                    <span>00</span>
+                  </span>
+                </span>
+                <span class="title">วัน</span>
+              </div>
+
+              <div class="countdown-block ml-1">
+                <span class="hours time-elem">
+                  <span class="top">10</span>
+                  <span class="top-back">
+                    <span>10</span>
+                  </span>
+                  <span class="bottom">10</span>
+                  <span class="bottom-back">
+                    <span>10</span>
+                  </span>
+                </span>
+                <span class="title">ชั่วโมง</span>
+              </div>
+
+              <div class="countdown-block">
+                <span class="minutes time-elem">
+                  <span class="top">00</span>
+                  <span class="top-back">
+                    <span>00</span>
+                  </span>
+                  <span class="bottom">00</span>
+                  <span class="bottom-back">
+                    <span>00</span>
+                  </span>
+                </span>
+                <span class="title">นาที</span>
+              </div>
+
+              <div class="countdown-block" style="margin-right:4px ;">
+                <span class="seconds time-elem">
+                  <span class="top">00</span>
+                  <span class="top-back">
+                    <span>00</span>
+                  </span>
+                  <span class="bottom">00</span>
+                  <span class="bottom-back">
+                    <span>00</span>
+                  </span>
+                </span>
+                <span class="title">วินาที</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card shop -->
+    <div class="no-scroll-x card-box">
+      <!-- Item 1 -->
+      <div class="d-flex">
+        <div class="w-144">
+          <div class="card-item-box">
+            <img
+              src="./img/Bewell_Brandday_overlay_3.png"
+              class="frame"
+              alt=""
+            />
+            <a href="#">
+              <img
+                src="./img/bewell-esteem-ergonomic-chair-front-left-view.jpg"
+                width="130"
+                class="img-item"
+                alt=""
+              />
+              <img src="./img/bewell.png" width="40" class="logo-item" alt="" />
+            </a>
+            <div class="mt-3 mb-7-t-3">
+              <span class="sale text-12">
+                <a href="#" class="bg-black-87">
+                  <div class="leading-20" id="text-item">
+                    เก้าอี้สุขภาพ Bewell ESTEEM Ergonomic Chair
+                  </div>
+                </a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="persen d-flex justify-content-center align-items-center"
+                  >
+                    -56%
+                  </div>
+                  <div class="">
+                    <h6 class="price">฿9,990</h6>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div
+              class="w-100 remain text-center d-flex justify-content-center align-items-center z-0"
+            >
+              <span class="z-1"> เหลือสินค้าอีก 3 ชิ้น </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="d-flex ml-8">
+        <div class="w-144">
+          <div class="card-item-box">
+            <a href="#">
+              <img
+                src="./img/bewell-ergonomic-ergo-cushion-ec01-back-and-seat-01.jpg"
+                width="130"
+                class="img-item"
+                alt=""
+              />
+              <img src="./img/bewell.png" width="40" class="logo-item" alt="" />
+            </a>
+            <div class="mt-3 mb-7-t-3">
+              <span class="sale text-12">
+                <a href="#" class="bg-black-87">
+                  <div class="leading-20" id="text-item">
+                    ชุดเบาะรองหลังและเบาะรองนั่ง Bewell Ergonomic Ergo-Cushion
+                    EC01 Back and Seat
+                  </div>
+                </a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="persen d-flex justify-content-center align-items-center"
+                  >
+                    -58%
+                  </div>
+                  <div class="">
+                    <h6 class="price">฿1,990</h6>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div
+              class="w-100 remain text-center d-flex justify-content-center align-items-center"
+            >
+              <span class="range"></span>
+              <span class="z-1"> เหลือสินค้าอีก 2 ชิ้น </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="d-flex ml-8">
+        <div class="w-144">
+          <div class="card-item-box">
+            <img src="./img/SB_Ovelay.png" class="frame" alt="" />
+            <a href="#">
+              <img
+                src="./img/samsung-hw-b450-soundbar-set.jpg"
+                width="130"
+                class="img-item"
+                alt=""
+              />
+              <img
+                src="./img/Samsung-1.jpg"
+                width="40"
+                class="logo-item"
+                alt=""
+              />
+            </a>
+            <div class="mt-3 mb-7-t-3">
+              <span class="sale text-12">
+                <a href="#" class="bg-black-87">
+                  <div class="leading-20" id="text-item">
+                    ลำโพง Samsung HW-B450 Soundbar
+                  </div>
+                </a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="persen d-flex justify-content-center align-items-center"
+                  >
+                    -9%
+                  </div>
+                  <div class="">
+                    <h6 class="price">฿4,990</h6>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div
+              class="w-100 remain text-center d-flex justify-content-center align-items-center"
+            >
+              <span class="z-1"> เหลืออีกเพียง 1 ชิ้น </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="./countdown.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
